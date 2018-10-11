@@ -26,10 +26,10 @@ WEBSERVER_PID=$!
 
 # Run the unit and e2e tests
 # (Steps 0 and 1 do not have tests)
-for i in $(seq 2 14)
-do
-  git checkout -f step-$i
+#for i in $(seq 2 14)
+#do
+  #git checkout -f step-$i
 
-  node_modules/.bin/karma start karma.conf.js --single-run
+node_modules/.bin/karma start karma.conf.js --single-run
   #node_modules/.bin/protractor e2e-tests/protractor.conf.js --directConnect
-done
+#done
