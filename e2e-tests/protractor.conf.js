@@ -1,24 +1,6 @@
 //jshint strict: false
-exports.config = {
-
-  allScriptsTimeout: 11000,
-
-  specs: [
-    '*.js'
-  ],
-
-  multiCapabilities: [{
-    'browserName': 'firefox'
-  }, {
-    'browserName': 'chrome'
-  }],
-
-  baseUrl: 'http://localhost:8000/',
-
-  framework: 'jasmine',
-
-  jasmineNodeOpts: {
-    defaultTimeoutInterval: 30000
-  }
-
-};
+//exports.config = {
+//  framework: 'mocha',
+//  baseURL: 'http://localhost:8000',
+//  specs: ['scenarios.js']
+//}

@@ -1,4 +1,4 @@
-describe('PhoneCat Application', function() {
+/*describe('PhoneCat Application', function() {
 
   describe('phoneList', function() {
 
@@ -19,7 +19,5 @@ describe('PhoneCat Application', function() {
       query.sendKeys('motorola');
       expect(phoneList.count()).toBe(2);
     });
-
   });
-
-});
+});*/

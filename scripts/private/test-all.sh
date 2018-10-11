@@ -31,5 +31,5 @@ do
   git checkout -f step-$i
 
   node_modules/.bin/karma start karma.conf.js --single-run
-  node_modules/.bin/protractor e2e-tests/protractor.conf.js --directConnect
+  #node_modules/.bin/protractor e2e-tests/protractor.conf.js --directConnect
 done
