@@ -1,10 +1,18 @@
-<div class="col-md-2">
-      Search: <input ng-model="$ctrl.query" />
+<div class="row">
+  <div class="phone-list-searchbar">
+    Search: <input class="phone-list-searchbox" ng-model="$ctrl.query" />
+    Sort by:
+    <select ng-model="$ctrl.orderProp">
+      <option value="age">Newest</option>
+      <option value="name">Alphabetical</option>
+    </select>
+  </div>
 </div>
-<ul>
-  <!--{{$ctrl.query}}-->
-  <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query">
-    <span>{{phone.name}}</span>
-    <p>{{phone.snippet}}</p>
-  </li>
-</ul>
+<div>
+  <ul>
+    <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp">
+      <span>{{phone.name}}</span>
+      <p>{{phone.snippet}}</p>
+    </li>
+  </ul>
+</div>
